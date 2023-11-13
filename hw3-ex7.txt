@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+   char str[100];
+   char ele;
+   int count;
+   printf("enter a string\n");
+   fgets(str,100,stdin);
+   for(int i=1;i<=100;i++){
+       if(str[i]=='\0'){
+           break;
+       }
+       count++;    
+       }
+ printf("the lenghth of the string is %d\n",count);
+    return 0;
+}

@@ -1,0 +1,39 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int i,r,c,j;
+    printf("enter the number of rows\n");
+    scanf("%d",&r);
+    printf("enter the number of coloumns\n");
+    scanf("%d",&c);
+    float x[r][c];
+    float y[c][r];
+    
+   //reading the matrix from the user 
+   for(i=0;i<r;i++)
+   {
+       for(j=0;j<c;j++)
+       {
+           printf("enter x%d%d\n",i,j);
+           scanf("%f",&x[i][j]);
+       }
+   }
+   //transpose operation 
+     for(i=0;i<c;i++)
+   {
+       for(j=0;j<r;j++)
+       {
+           y[i][j]=x[j][i];
+       }
+   }
+   //printing the transpose 
+    for(i=0;i<c;i++)
+   {
+       for(j=0;j<r;j++)
+       {
+           printf("y%d%d = %f\n",i,j,y[i][j]);
+       }
+   }
+    return 0;
+}

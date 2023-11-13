@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int i,n;
+    int ele;
+    int pos;
+    printf("enter the number of elemnts you want to enter\n");
+    scanf("%d",&n);
+    int x[n];
+    for(i=0;i<n;i++){
+        printf("enter elemnt %d \n",i);
+        scanf("%d",&x[i]);
+    }
+    printf("enter the element you want to insert\n");
+    scanf("%d",&ele);
+    printf("enter the position of this element\n");
+    scanf("%d",&pos);
+    x[pos]=ele;
+    for(i=0;i<n;i++){
+        printf("%d\n",x[i]);
+        }
+    return 0;
+}
